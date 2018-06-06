@@ -16,6 +16,7 @@ services:
     environment:
      WAIT_HOSTS: cassandra:9042,kafka:9092
      WAIT_TIMEOUT: 60
+     MT_CHUNK_CACHE_MAX_SIZE: 0
     links:
      - cassandra
 
